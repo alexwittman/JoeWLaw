@@ -19,7 +19,14 @@ export default function CovidAlert() {
       <AlertIcon />
       <AlertTitle mr={2}>Has COVID-19 affected you?</AlertTitle>
       <AlertDescription>
-        <Button as={Link} color={"white"} bg={"red.500"} size="sm" href="covid">
+        <Button
+          as={Link}
+          rounded={"full"}
+          color={"white"}
+          bg={"red.500"}
+          size="sm"
+          href="covid"
+        >
           Learn More
         </Button>
       </AlertDescription>

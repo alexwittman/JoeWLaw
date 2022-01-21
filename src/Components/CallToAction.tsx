@@ -17,11 +17,11 @@ export default function CallToAction() {
         textAlign={"center"}
         align={"center"}
         spacing={{ base: 6, md: 8 }}
-        py={{ base: 12, md: 20 }}
+        pt={{ base: 12, md: 20 }}
       >
         <Heading
           fontWeight={600}
-          fontSize={{ base: "xl", sm: "2xl", md: "3xl" }}
+          fontSize={{ base: "2xl", md: "3xl" }}
           lineHeight={"110%"}
         >
           <Text as={"span"} color={"green.400"}>
@@ -34,7 +34,7 @@ export default function CallToAction() {
         </Heading>
         <Heading
           mt={5}
-          fontWeight={600}
+          //fontWeight={600}
           fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
           lineHeight={"110%"}
         >

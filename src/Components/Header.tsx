@@ -77,6 +77,7 @@ export default function Header() {
           <Button
             display={{ base: "none", md: "flex" }}
             as={Link}
+            rounded={"full"}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
@@ -84,7 +85,7 @@ export default function Header() {
             href={"tel:+17852343663"}
             leftIcon={<PhoneIcon />}
             _hover={{
-              bg: "green.300",
+              bg: "green.500",
             }}
           >
             Call Now: 785-234-3663
