@@ -279,60 +279,9 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Bankruptcy",
     href: "bankruptcy",
-    children: [
-      {
-        label: "Chapter 7",
-        subLabel: "Learn More",
-        href: "bakruptcy#chapter7",
-      },
-      {
-        label: "Chapter 13",
-        subLabel: "Learn More",
-        href: "bakruptcy#chapter13",
-      },
-    ],
   },
   { label: "Reviews", href: "reviews" },
   { label: "FAQ", href: "faq" },
   { label: "Blog", href: "blog" },
   { label: "COVID", href: "covid" },
-  // {
-  //   label: "Inspiration",
-  //   children: [
-  //     {
-  //       label: "Explore Design Work",
-  //       subLabel: "Trending Design to inspire you",
-  //       href: "#",
-  //     },
-  //     {
-  //       label: "New & Noteworthy",
-  //       subLabel: "Up-and-coming Designers",
-  //       href: "#",
-  //     },
-  //   ],
-  //   href: "hello",
-  // },
-  // {
-  //   label: "Find Work",
-  //   children: [
-  //     {
-  //       label: "Job Board",
-  //       subLabel: "Find your dream design job",
-  //       href: "#",
-  //     },
-  //     {
-  //       label: "Freelance Projects",
-  //       subLabel: "An exclusive list for contract work",
-  //       href: "#",
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: "Learn Design",
-  //   href: "#",
-  // },
-  // {
-  //   label: "Hire Designers",
-  //   href: "#",
-  // },
 ];

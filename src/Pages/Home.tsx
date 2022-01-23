@@ -1,6 +1,8 @@
 import { Stack } from "@chakra-ui/react";
+import Bankruptcy101 from "../Components/Bankruptcy101";
 import BankruptcyDoes from "../Components/BankruptcyDoes";
 import CallToAction from "../Components/CallToAction";
+import HomeFAQ from "../Components/HomeFAQ";
 import HomeForm from "../Components/HomeForm";
 import Testimonials from "../Components/Testimonials";
 import WhyJoe from "../Components/WhyJoe";
@@ -11,8 +13,10 @@ export default function Home() {
       <CallToAction />
       <WhyJoe />
       <HomeForm />
-      <Testimonials />
+      <Bankruptcy101 />
       <BankruptcyDoes />
+      <Testimonials />
+      <HomeFAQ />
     </Stack>
   );
 }

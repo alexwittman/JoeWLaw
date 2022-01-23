@@ -1,16 +1,9 @@
 import React from "react";
 import {
   chakra,
-  Box,
   useColorModeValue,
   Flex,
-  Badge,
-  Input,
-  VisuallyHidden,
   Grid,
-  Button,
-  InputGroup,
-  InputRightElement,
   Image,
   Text,
   GridItem,
@@ -54,7 +47,7 @@ export default function HomeForm() {
             color={useColorModeValue("brand.600", "gray.300")}
             lineHeight="shorter"
           >
-            Get Your{" "}
+            Schedule A{" "}
             <Text as="span" color={"red.400"}>
               Free Consultation
             </Text>{" "}

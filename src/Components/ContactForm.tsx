@@ -21,8 +21,6 @@ export default function ContactForm() {
     <Grid
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
       gap={6}
-      spacingX={6}
-      spacingY={6}
       width="full"
       maxW={"3xl"}
       bg="red.400"
@@ -37,8 +35,8 @@ export default function ContactForm() {
             required
             id="name"
             type="text"
-            placeholder="John Doe"
-            _placeholder={{ color: "black" }}
+            placeholder="e.g. John Doe"
+            _placeholder={{ color: "gray.400" }}
             bg="white"
             color="black"
             maxLength={30}
@@ -49,7 +47,7 @@ export default function ContactForm() {
         <FormControl>
           <FormLabel htmlFor="email">Email address</FormLabel>
           <Input
-            _placeholder={{ color: "black" }}
+            _placeholder={{ color: "gray.400" }}
             bg="white"
             color="black"
             required
@@ -64,7 +62,7 @@ export default function ContactForm() {
           <InputGroup>
             <InputLeftAddon children={"+1"} bg="gray.200" color="black" />
             <Input
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -80,7 +78,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="family">Family Status</FormLabel>
           <InputGroup>
             <Select
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -101,7 +99,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="income">Income</FormLabel>
           <InputGroup>
             <Select
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -125,7 +123,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="mortgage">Do you have a Mortgage?</FormLabel>
           <InputGroup>
             <Select
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -143,7 +141,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="car">Do you have a Car Payment?</FormLabel>
           <InputGroup>
             <Select
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -161,7 +159,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="garnish">Are you being Garnished?</FormLabel>
           <InputGroup>
             <Select
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               required
@@ -179,7 +177,7 @@ export default function ContactForm() {
           <FormLabel htmlFor="message">Other Concerns or Questions</FormLabel>
           <InputGroup>
             <Textarea
-              _placeholder={{ color: "black" }}
+              _placeholder={{ color: "gray.400" }}
               bg="white"
               color="black"
               id="message"

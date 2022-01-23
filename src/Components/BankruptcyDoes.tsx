@@ -26,22 +26,6 @@ export default function BankruptcyDoes() {
             Do For You
           </Text>
         </Heading>
-        <Text color={"gray.600"} fontSize={"xl"}>
-          Bankruptcy forgives debts and allows you a{" "}
-          <Text as="span" fontWeight={700} fontSize={"2xl"}>
-            fresh start
-          </Text>{" "}
-          while allowing you to keep most if not all of your property and{" "}
-          <Text as="span" fontWeight={700} fontSize={"2xl"}>
-            stops creditors
-          </Text>{" "}
-          from contacting and harassing you. A{" "}
-          <Text as="span" fontWeight={700} fontSize={"2xl"}>
-            fresh start
-          </Text>{" "}
-          allows you to begin again and keep the property that is needed by you
-          and your family.
-        </Text>
       </Stack>
 
       <Container maxW={"7xl"} mt={10}>
