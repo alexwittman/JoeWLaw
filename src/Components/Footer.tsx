@@ -52,14 +52,14 @@ export default function Footer() {
           <Logo />
         </Flex>
         <Text py={6} fontSize={"sm"} textAlign={"center"}>
-          I am a federal authorized DEBT RELIEF AGENCY and I help people file
-          bankruptcy. Information contained in this website is not legal advice
-          and no attorney client relationship is created by you accessing
-          information in this website. This is informational only and unless you
-          sign a written contact with Joseph I. Wittman Attorney at Law, I do
-          not represent you in any way. You can retain me as your attorney by
-          contacting us at the number set forth in this website and signing a
-          contract to employ to our firm to help you.
+          alskdfjhalksdjfhasdfasdfas I am a federal authorized DEBT RELIEF
+          AGENCY and I help people file bankruptcy. Information contained in
+          this website is not legal advice and no attorney client relationship
+          is created by you accessing information in this website. This is
+          informational only and unless you sign a written contact with Joseph
+          I. Wittman Attorney at Law, I do not represent you in any way. You can
+          retain me as your attorney by contacting us at the number set forth in
+          this website and signing a contract to employ to our firm to help you.
         </Text>
       </Box>
     </Box>
