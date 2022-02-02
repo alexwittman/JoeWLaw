@@ -280,7 +280,7 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Bankruptcy",
     href: "bankruptcy",
   },
-  { label: "Chatper 7", href: "chapter7" },
+  { label: "Chapter 7", href: "chapter7" },
   { label: "Chapter 13", href: "chapter13" },
   { label: "Reviews", href: "reviews" },
   { label: "FAQ", href: "faq" },

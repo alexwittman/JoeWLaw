@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router";
 import About from "./About";
 import Bankruptcy from "./Bankruptcy";
 import Blog from "./Blog";
@@ -24,6 +25,7 @@ export default function Router() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/covid" element={<Covid />} />
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
