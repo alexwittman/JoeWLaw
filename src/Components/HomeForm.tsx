@@ -18,7 +18,7 @@ export default function HomeForm() {
       width="full"
       gap="4"
     >
-      <GridItem>
+      <GridItem display={{ base: "none", md: "block" }}>
         <Image
           src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
           alt="3 women looking at a laptop"
@@ -46,6 +46,7 @@ export default function HomeForm() {
             fontWeight="bold"
             color={useColorModeValue("brand.600", "gray.300")}
             lineHeight="shorter"
+            textAlign={{ base: "center", md: "left" }}
           >
             Schedule A{" "}
             <Text as="span" color={"red.400"}>
@@ -55,6 +56,17 @@ export default function HomeForm() {
           </chakra.h1>
           <ContactForm />
         </Flex>
+      </GridItem>
+      <GridItem display={{ base: "block", md: "none" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+          alt="3 women looking at a laptop"
+          fit="cover"
+          h={{ base: 64, md: "full" }}
+          w={"full"}
+          bg="gray.100"
+          loading="lazy"
+        />
       </GridItem>
     </Grid>
   );

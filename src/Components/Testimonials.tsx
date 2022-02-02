@@ -90,19 +90,18 @@ interface TestimonialCardProps {
   index: number;
 }
 
-function TestmonialCard(props: TestimonialCardProps) {
+export function TestmonialCard(props: TestimonialCardProps) {
   const { name, content } = props;
   return (
     <Flex
-      boxShadow={"2xl"}
-      maxW={"640px"}
+      boxShadow={"sm"}
       direction={{ base: "column-reverse", md: "row" }}
       width={"full"}
       rounded={"xl"}
       p={10}
       justifyContent={"space-between"}
       position={"relative"}
-      bg={useColorModeValue("white", "gray.800")}
+      bg={useColorModeValue("gray.100", "gray.800")}
       _after={{
         content: '""',
         position: "absolute",

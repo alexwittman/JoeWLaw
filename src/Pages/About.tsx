@@ -39,7 +39,7 @@ export default function About() {
               bg="gray.100"
               loading="lazy"
             />
-            <Center>
+            <Center pt={6}>
               <Stack direction="row" align="center">
                 <AvvoProfile />
                 <AvvoRating />

@@ -22,6 +22,7 @@ export default function Contact() {
       maxW={"7xl"}
       textAlign={"center"}
       align="center"
+      px={{ base: 8, md: 0 }}
       mt={{ base: 4, md: 10 }}
     >
       <Heading fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}>
@@ -65,13 +66,13 @@ export default function Contact() {
             </Link>
           </Text>
         </VStack>
-        <Flex flex={2}>
+        <Flex flex={2} flexDir={{ base: "column", md: "row" }}>
           <VStack textAlign="left" align={"left"} spacing={0} mr={10}>
             <Text fontWeight={600} fontSize="2xl">
               Location
             </Text>
             <Text fontSize={"lg"}>
-              112 SW 6th Ave Suite 508
+              112 SW 6th Ave, Suite 508
               <br />
               Topeka, KS 66603
               <br />
@@ -83,7 +84,7 @@ export default function Contact() {
               </Link>
             </Text>
           </VStack>
-          <Box minW="sm">
+          <Box minW="sm" pt={{ base: 6, md: 0 }}>
             <Map />
           </Box>
         </Flex>
