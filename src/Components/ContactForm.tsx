@@ -251,7 +251,7 @@ export default function ContactForm() {
   function SubmitForm(event: React.FormEvent) {
     event.preventDefault();
     setSendState("Sending");
-    window.Email.send({
+    let emailObj = {
       Host: "smtp.gmail.com",
       Username: process.env.REACT_APP_FORM_EMAIL_FROM,
       Password: process.env.REACT_APP_FORM_EMAIL_PASSWORD,
@@ -277,8 +277,11 @@ export default function ContactForm() {
         formInfo.garnish +
         "\n<br>Message: " +
         formInfo.message,
-    }).then((message: string) => {
+    };
+    window.Email.send(emailObj).then((message: string) => {
       // TODO: handle email sending errors
+      console.log(emailObj);
+      console.log(message);
       setSendState("Sent");
     });
   }
