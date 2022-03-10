@@ -280,7 +280,7 @@ export default function ContactForm() {
     };
     window.Email.send(emailObj).then((message: string) => {
       // TODO: handle email sending errors
-      console.log(emailObj);
+      //console.log(emailObj);
       console.log(message);
       setSendState("Sent");
     });
