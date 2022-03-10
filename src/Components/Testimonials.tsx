@@ -149,7 +149,7 @@ function GridTestimonials() {
       justifyContent={"center"}
       direction={"column"}
     >
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacingX={"14"} spacingY="10">
+      <SimpleGrid columns={{ base: 1, lg: 3 }} spacingX={"14"} spacingY="10">
         {testimonials.map((cardInfo, index) => (
           <TestmonialCard {...cardInfo} key={index} index={index} />
         ))}

@@ -40,6 +40,7 @@ export default function Contact() {
         direction={{ base: "column", md: "row" }}
         spacing="6"
         pt="4"
+        px="8"
         width={"full"}
         maxWidth={"5xl"}
       >

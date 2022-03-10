@@ -39,7 +39,7 @@ export default function ContactForm() {
     setFormInfo({ ...formInfo, ...newState });
 
   return sendState === "None" || sendState === "Sending" ? (
-    <form onSubmit={SubmitForm}>
+    <chakra.form onSubmit={SubmitForm} width="full" maxW={"3xl"} px="5">
       <Grid
         templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         gap={6}
@@ -228,7 +228,7 @@ export default function ContactForm() {
           </Center>
         </GridItem>
       </Grid>
-    </form>
+    </chakra.form>
   ) : (
     <Box
       width="full"
