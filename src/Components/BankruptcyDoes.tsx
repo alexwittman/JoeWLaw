@@ -29,33 +29,30 @@ export default function BankruptcyDoes() {
       </Stack>
 
       <Container maxW={"7xl"} mt={10}>
-        <Accordion allowMultiple allowToggle>
-          <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 3 }}
-            spacingY={2}
-            spacingX={6}
-          >
-            {features.map((feature, index) => (
-              <AccordionItem key={index}>
-                <AccordionButton>
-                  <HStack flex={1} textAlign="left">
-                    <Box color={"green.400"} px={2}>
-                      <Icon as={CheckIcon} />
-                    </Box>
-                    <Text fontWeight={600} fontSize={{ base: "lg", md: "lg" }}>
-                      {feature.title}
-                    </Text>
-                    <Flex flex={1} />
-                    <AccordionIcon />
-                  </HStack>
-                </AccordionButton>
-                <AccordionPanel>
-                  <Text color={"gray.600"}>{feature.text}</Text>
-                </AccordionPanel>
-              </AccordionItem>
-            ))}
-          </SimpleGrid>
-        </Accordion>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacingY={2}
+          spacingX={6}
+        >
+          {features.map((feature, index) => (
+            <HStack
+              flex={1}
+              textAlign="left"
+              key={index}
+              background="gray.100"
+              borderRadius="lg"
+              py="2"
+            >
+              <Box color={"green.400"} px={2}>
+                <Icon as={CheckIcon} />
+              </Box>
+              <Text fontWeight={600} fontSize={{ base: "xl", md: "xl" }}>
+                {feature.title}
+              </Text>
+              <Flex flex={1} />
+            </HStack>
+          ))}
+        </SimpleGrid>
       </Container>
     </Box>
   );
