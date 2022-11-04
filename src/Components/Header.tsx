@@ -24,6 +24,7 @@ import {
   PhoneIcon,
 } from "@chakra-ui/icons";
 import Logo from "./Logo";
+import PhoneButton from "./PhoneButton";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -74,22 +75,7 @@ export default function Header() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            display={{ base: "none", md: "flex" }}
-            as={Link}
-            rounded={"full"}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"green.400"}
-            href={"tel:+17852343663"}
-            leftIcon={<PhoneIcon />}
-            _hover={{
-              bg: "green.500",
-            }}
-          >
-            Call Now: 785-234-3663
-          </Button>
+          <PhoneButton />
         </Stack>
       </Flex>
       <Flex display={{ base: "flex", md: "none" }}>
@@ -284,6 +270,6 @@ const NAV_ITEMS: Array<NavItem> = [
   { label: "Chapter 13", href: "chapter13" },
   { label: "Reviews", href: "reviews" },
   { label: "FAQ", href: "faq" },
-  { label: "Blog", href: "blog" },
+  // { label: "Blog", href: "blog" },
   { label: "COVID", href: "covid" },
 ];

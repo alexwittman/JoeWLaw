@@ -22,7 +22,7 @@ export default function Router() {
         <Route path="/chapter13" element={<Chapter13 />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/covid" element={<Covid />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/" />} />

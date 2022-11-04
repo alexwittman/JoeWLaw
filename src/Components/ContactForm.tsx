@@ -52,7 +52,16 @@ export default function ContactForm() {
       >
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="name">Full Name</FormLabel>
+            <FormLabel
+              htmlFor="name"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Full Name
+            </FormLabel>
             <Input
               id="name"
               type="text"
@@ -67,7 +76,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="email">Email address</FormLabel>
+            <FormLabel
+              htmlFor="email"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Email address
+            </FormLabel>
             <Input
               _placeholder={{ color: "gray.400" }}
               bg="white"
@@ -80,7 +98,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="phone">Phone Number</FormLabel>
+            <FormLabel
+              htmlFor="phone"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Phone Number
+            </FormLabel>
             <InputGroup>
               <InputLeftAddon children={"+1"} bg="gray.200" color="black" />
               <Input
@@ -97,7 +124,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="family">Family Status</FormLabel>
+            <FormLabel
+              htmlFor="family"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Family Status
+            </FormLabel>
             <InputGroup>
               <Select
                 _placeholder={{ color: "gray.400" }}
@@ -118,7 +154,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="income">Income</FormLabel>
+            <FormLabel
+              htmlFor="income"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Income
+            </FormLabel>
             <InputGroup>
               <Select
                 _placeholder={{ color: "gray.400" }}
@@ -142,7 +187,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="mortgage">Do you have a Mortgage?</FormLabel>
+            <FormLabel
+              htmlFor="mortgage"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Do you have a Mortgage?
+            </FormLabel>
             <InputGroup>
               <Select
                 _placeholder={{ color: "gray.400" }}
@@ -160,7 +214,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="car">Do you have a Car Payment?</FormLabel>
+            <FormLabel
+              htmlFor="car"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Do you have a Car Payment?
+            </FormLabel>
             <InputGroup>
               <Select
                 _placeholder={{ color: "gray.400" }}
@@ -178,7 +241,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem>
           <FormControl isRequired>
-            <FormLabel htmlFor="garnish">Are you being Garnished?</FormLabel>
+            <FormLabel
+              htmlFor="garnish"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Are you being Garnished?
+            </FormLabel>
             <InputGroup>
               <Select
                 _placeholder={{ color: "gray.400" }}
@@ -196,7 +268,16 @@ export default function ContactForm() {
         </GridItem>
         <GridItem colSpan={{ base: 1, md: 2 }}>
           <FormControl>
-            <FormLabel htmlFor="message">Other Concerns or Questions</FormLabel>
+            <FormLabel
+              htmlFor="message"
+              requiredIndicator={
+                <Text as="span" color={"white"}>
+                  *
+                </Text>
+              }
+            >
+              Other Concerns or Questions
+            </FormLabel>
             <InputGroup>
               <Textarea
                 _placeholder={{ color: "gray.400" }}

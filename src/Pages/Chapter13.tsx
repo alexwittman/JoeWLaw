@@ -8,6 +8,8 @@ import {
   Link,
   chakra,
 } from "@chakra-ui/react";
+import FAQForm from "../Components/FAQForm";
+import GavelImage from "../Images/Gavel.jpg";
 
 export default function Chapter13() {
   return (
@@ -18,6 +20,7 @@ export default function Chapter13() {
         align={"center"}
         spacing={{ base: 6, md: 8 }}
         pt={{ base: 6, md: 12 }}
+        px={8}
       >
         <Heading
           mt={5}
@@ -39,9 +42,9 @@ export default function Chapter13() {
           maxW={"3xl"}
           mt={6}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt
-          at arcu nec faucibus. Nam lobortis, felis ut vehicula sollicitudin,
-          diam diam cursus dolor, eu interdum libero dui at mi.
+          This chapter of the Bankruptcy Code provides for adjustment of debts
+          of an individual with regular income. Chapter 13 allows a debtor to
+          keep property and pay debts over time, usually three to five years.
         </Text>
         <Stack spacing={6} direction={"row"} mt={6}>
           <Button
@@ -71,37 +74,34 @@ export default function Chapter13() {
               {"?"}
             </Heading>
             <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.600"}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              tincidunt at arcu nec faucibus. Nam lobortis, felis ut vehicula
-              sollicitudin, diam diam cursus dolor, eu interdum libero dui at
-              mi. Donec ullamcorper quam non diam interdum dignissim. Phasellus
-              vehicula tortor vel ex pulvinar, in commodo ex interdum. Nulla
-              ultricies finibus mauris, non pulvinar sapien ultrices in.
+              Chapter 13 differs from a Chapter 7 in that you make payments to a
+              trustee for 3 to 5 years. The amount you pay depends on your
+              income and what you are trying to pay through your plan.
             </Text>
             <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.600"}>
-              In venenatis fringilla eros at dignissim. Aenean ex nulla,
-              efficitur eu risus facilisis, aliquam rutrum nisi. In quis aliquam
-              est, quis tincidunt nisl. Donec feugiat elementum metus dignissim
-              auctor. Aenean sagittis, felis a ultrices aliquam, libero sapien
-              posuere nisl, vel blandit neque odio et neque. In sed dui quis
-              elit venenatis accumsan vel a risus. Nam lacinia euismod mauris,
-              dictum maximus lacus dapibus nec. Suspendisse ornare, sapien
-              aliquam viverra laoreet, urna nisl congue leo, sit amet egestas
-              metus odio sed magna.
+              You don’t have to pay unsecured debts in a Chapter 13, but in some
+              cases you may have to pay something to the unsecured creditors.
+              Unsecured creditors are those such as credit cards, medical bills,
+              utilities, pay day loans.
+            </Text>
+            <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.600"}>
+              Chapter 13, like Chapter 7, does not discharge or eliminate taxes,
+              student loans, child support or criminal fines. It has a broader
+              discharge than what Chapter 7 gives to you.
+            </Text>
+            <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.600"}>
+              There is more flexibility in Chapter 13 to deal with car payments,
+              arrearage on mortgages and other types of debts. It provides a
+              structure which may be helpful in getting certain debts paid
+              rather than in Chapter 7.
             </Text>
           </Stack>
         </Flex>
         <Flex flex={1} pt={{ base: 4, md: 0 }}>
-          <Image
-            alt={"Login Image"}
-            objectFit={"cover"}
-            src={
-              "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            }
-          />
+          <Image alt={"Login Image"} objectFit={"cover"} src={GavelImage} />
         </Flex>
       </Stack>
-      <Stack direction={{ base: "column", md: "row" }}>
+      {/* <Stack direction={{ base: "column", md: "row" }}>
         <Flex flex={1} display={{ base: "none", md: "flex" }}>
           <Image
             alt={"Login Image"}
@@ -312,7 +312,8 @@ export default function Chapter13() {
             }
           />
         </Flex>
-      </Stack>
+      </Stack> */}
+      <FAQForm />
     </Stack>
   );
 }

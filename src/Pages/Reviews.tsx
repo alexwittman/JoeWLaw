@@ -89,37 +89,43 @@ const reviews: { reviewList: Review[]; testimonial: Testimonial }[] = [
     reviewList: [
       {
         logo: "Avvo",
-        name: "Leslie A.",
+        name: "Heather",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Mr. Wittman is very thorough and honest. 
+          He doesn't sugar coat things like many other attorneys do.
+          Being a client of his he helped get the debt cleared,
+          but you have to be willing to put forth the effort.
+          It's not easy to learn new behaviors,
+          but Mr. Wittman explains everything clearly.
+          His service comes at a price, but he gives the tools
+          needed to start over. He requires you to be up front and
+          honest and in return he sets things up for the plan that fits best.
+          He explains the options and the benefits and downfalls of each.`,
       },
       {
         logo: "Avvo",
-        name: "Leslie B.",
+        name: "Evon",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Mr. Wittman was extremely helpful in getting my bankruptcy 
+          finished after my deployment. And he continues to assist me
+          on matters nearly two years later.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
     ],
     testimonial: {
       name: "Brandi L.",
-      content:
-        "Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.",
+      content: `Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.`,
     },
   },
   {
@@ -128,35 +134,30 @@ const reviews: { reviewList: Review[]; testimonial: Testimonial }[] = [
         logo: "Avvo",
         name: "Leslie A.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie B.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
     ],
     testimonial: {
       name: "Brandi L.",
-      content:
-        "Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.",
+      content: `Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.`,
     },
   },
   {
@@ -165,35 +166,30 @@ const reviews: { reviewList: Review[]; testimonial: Testimonial }[] = [
         logo: "Avvo",
         name: "Leslie A.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie B.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
       {
         logo: "Avvo",
         name: "Leslie H.",
         stars: 5,
-        review:
-          "Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.",
+        review: `Joe is a very nice and professional gentleman to work with. He is very reasonably priced. He was very knowledgeable and answered all of my questions. I would highly recommend him to anyone for their attorney needs.`,
       },
     ],
     testimonial: {
       name: "Brandi L.",
-      content:
-        "Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.",
+      content: `Joe is extremely knowledgeable. He communicates all of the information and lets you know what to expect every step of the way.  He is also very thorough. I would highly recommend him to anyone needing a good debt relief attorney.`,
     },
   },
 ];

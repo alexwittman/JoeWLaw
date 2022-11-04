@@ -49,17 +49,23 @@ export default function Contact() {
             Contact Information
           </Text>
           <Text fontSize={"lg"}>
-            Phone:{" "}
+            Office Phone:{" "}
             <Link color="teal.400" href="tel:+17852343663">
               (785)-234-3663
             </Link>
           </Text>
           <Text fontSize={"lg"}>
+            Cell Phone:{" "}
+            <Link color="teal.400" href="tel:+17852301063">
+              (785)-230-1063
+            </Link>
+          </Text>
+          {/* <Text fontSize={"lg"}>
             Fax:{" "}
             <Link color="teal.400" href="tel:+17852343663">
               (785)-???-????
             </Link>
-          </Text>
+          </Text> */}
           <Text fontSize={"lg"}>
             Email:{" "}
             <Link color="teal.400" href="mailto:wittmanlaw@gmail.com">
@@ -85,7 +91,7 @@ export default function Contact() {
               </Link>
             </Text>
           </VStack>
-          <Box minW="sm" pt={{ base: 6, md: 0 }}>
+          <Box minW="xs" pt={{ base: 6, md: 0 }}>
             <Map />
           </Box>
         </Flex>
