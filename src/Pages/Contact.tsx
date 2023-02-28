@@ -91,7 +91,7 @@ export default function Contact() {
               </Link>
             </Text>
           </VStack>
-          <Box minW="xs" pt={{ base: 6, md: 0 }}>
+          <Box width={{ base: "100%" }} pt={{ base: 6, md: 0 }}>
             <Map />
           </Box>
         </Flex>

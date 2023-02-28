@@ -25,9 +25,11 @@ import {
 } from "@chakra-ui/icons";
 import Logo from "./Logo";
 import PhoneButton from "./PhoneButton";
+import React from "react";
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
+  const LogoRef = React.forwardRef((props, ref) => <Logo />);
 
   return (
     <Box>
@@ -60,7 +62,7 @@ export default function Header() {
           <Box>
             <Popover trigger={"hover"} placement={"bottom-start"}>
               <PopoverTrigger>
-                <Logo />
+                <LogoRef />
               </PopoverTrigger>
             </Popover>
           </Box>
@@ -85,10 +87,10 @@ export default function Header() {
           alignItems="center"
           justifyContent="center"
           textAlign="center"
-          href="tel:+17852343663"
+          href="tel:+17852301063"
         >
           <PhoneIcon mr={2} />
-          <AlertTitle mr={2}>Call Now: 785-234-3663</AlertTitle>
+          <AlertTitle mr={2}>Call Now: 785-230-1063</AlertTitle>
         </Alert>
       </Flex>
 
@@ -264,10 +266,27 @@ const NAV_ITEMS: Array<NavItem> = [
   { label: "Contact", href: "contact" },
   {
     label: "Bankruptcy",
-    href: "bankruptcy",
+    // href: "bankruptcy",
+    children: [
+      {
+        label: "General Information",
+        // subLabel: "Learn More",
+        href: "bakruptcy",
+      },
+      {
+        label: "Chapter 7",
+        // subLabel: "Learn More",
+        href: "chapter7",
+      },
+      {
+        label: "Chapter 13",
+        // subLabel: "Learn More",
+        href: "chapter13",
+      },
+    ],
   },
-  { label: "Chapter 7", href: "chapter7" },
-  { label: "Chapter 13", href: "chapter13" },
+  // { label: "Chapter 7", href: "chapter7" },
+  // { label: "Chapter 13", href: "chapter13" },
   { label: "Reviews", href: "reviews" },
   { label: "FAQ", href: "faq" },
   // { label: "Blog", href: "blog" },

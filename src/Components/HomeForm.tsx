@@ -22,7 +22,7 @@ export default function HomeForm() {
       <GridItem display={{ base: "none", md: "block" }}>
         <Image
           src={ConsultationImage}
-          alt="3 women looking at a laptop"
+          alt="bankruptcy consultation"
           fit="cover"
           h={{ base: 64, md: "full" }}
           w={"full"}
@@ -61,7 +61,7 @@ export default function HomeForm() {
       <GridItem display={{ base: "block", md: "none" }}>
         <Image
           src={ConsultationImage}
-          alt="3 women looking at a laptop"
+          alt="bankruptcy consultation"
           fit="cover"
           h={{ base: 64, md: "full" }}
           w={"full"}

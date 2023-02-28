@@ -13,7 +13,9 @@ declare global {
 }
 
 function App() {
-  useScript("https://smtpjs.com/v3/smtp.js");
+  useScript(
+    "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  );
 
   return (
     <ChakraProvider>

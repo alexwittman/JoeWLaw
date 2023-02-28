@@ -15,8 +15,10 @@ import {
   chakra,
   Text,
   Box,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 type FormInfo = {
   name?: string;
@@ -37,6 +39,7 @@ export default function ContactForm() {
   const [formInfo, setFormInfo] = useState<FormInfo>({});
   const setState = (newState: FormInfo) =>
     setFormInfo({ ...formInfo, ...newState });
+  const toast = useToast();
 
   return sendState === "None" || sendState === "Sending" ? (
     <chakra.form onSubmit={SubmitForm} width="full" maxW={"3xl"} px="5">
@@ -332,38 +335,38 @@ export default function ContactForm() {
   function SubmitForm(event: React.FormEvent) {
     event.preventDefault();
     setSendState("Sending");
-    let emailObj = {
-      Host: "smtp.gmail.com",
-      Username: process.env.REACT_APP_FORM_EMAIL_FROM,
-      Password: process.env.REACT_APP_FORM_EMAIL_PASSWORD,
-      To: process.env.REACT_APP_FORM_EMAIL_TO,
-      From: process.env.REACT_APP_FORM_EMAIL_FROM,
-      Subject: "Website Form Submission: " + formInfo.name,
-      Body:
-        "Name: " +
-        formInfo.name +
-        "<br>Email: " +
-        formInfo.email +
-        "\n<br>Phone: " +
-        formInfo.phone +
-        "\n<br>Family Status: " +
-        formInfo.family +
-        "\n<br>Income: " +
-        formInfo.income +
-        "\n<br>Has Mortgage: " +
-        formInfo.mortgage +
-        "\n<br>Has Car Payment: " +
-        formInfo.car +
-        "\n<br>Being Garnished: " +
-        formInfo.garnish +
-        "\n<br>Message: " +
-        formInfo.message,
-    };
-    window.Email.send(emailObj).then((message: string) => {
-      // TODO: handle email sending errors
-      //console.log(emailObj);
-      console.log(message);
-      setSendState("Sent");
-    });
+    emailjs
+      .send(
+        "service_qjtqnf2",
+        "template_cm8jt2m",
+        {
+          from_name: formInfo.name,
+          phone: formInfo.phone,
+          family_status: formInfo.family,
+          income: formInfo.income,
+          mortgage: formInfo.mortgage,
+          car: formInfo.car,
+          garnished: formInfo.garnish,
+          message: formInfo.message,
+          reply_to: formInfo.email,
+        },
+        "ijN70EUbuCpHIY1n2"
+      )
+      .then(
+        (res) => {
+          setSendState("Sent");
+        },
+        (err) => {
+          toast({
+            title: "Error submitting form.",
+            description:
+              "Please try again, or contact me directly by phone or email.",
+            status: "error",
+            duration: 90000,
+            isClosable: true,
+          });
+          setSendState("Sent");
+        }
+      );
   }
 }

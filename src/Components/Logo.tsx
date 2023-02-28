@@ -7,16 +7,16 @@ export default function Logo() {
     <Link
       p={2}
       href={"/"}
-      fontSize={"sm"}
-      fontWeight={500}
+      fontSize={{ lg: "xl", md: "md" }}
+      fontWeight={700}
       color={useColorModeValue("gray.800", "white")}
       _hover={{
         textDecoration: "none",
         color: linkHoverColor,
       }}
-      fontFamily={"heading"}
+      display="block"
     >
-      Wittman Law Logo
+      Joe Wittman Law
     </Link>
   );
 }

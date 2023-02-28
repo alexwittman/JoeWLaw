@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import AvvoProfile from "../Components/AvvoProfile";
 import AvvoRating from "../Components/AvvoRating";
+import JoeImage from "../Images/Joe.jpg";
 
 export default function About() {
   return (
@@ -31,12 +32,11 @@ export default function About() {
         <GridItem>
           <Box>
             <Image
-              src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
-              alt="3 women looking at a laptop"
-              fit="cover"
+              src={JoeImage}
+              alt="Joe Wittman bankruptcy attorney at law Topeka, KS"
+              fit="contain"
               h={{ base: "full", md: "64" }}
               w={"full"}
-              bg="gray.100"
               loading="lazy"
             />
             <Center pt={6}>
