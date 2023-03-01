@@ -17,7 +17,7 @@ export default function PhoneButton() {
         bg: "green.500",
       }}
     >
-      Call Now: 785-234-3663
+      Call Now: 785-230-1063
     </Button>
   );
 }
